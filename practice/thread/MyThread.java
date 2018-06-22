@@ -12,6 +12,9 @@ public class MyThread extends Thread {
         Thread thread1 = new MyThread();
         Thread thread2 = new MyThread();
         thread1.start();
-        thread2.start();
+        thread1.start();
+        thread1.start();
+        thread1.start();
+//        thread2.start();
     }
 }
