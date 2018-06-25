@@ -60,9 +60,9 @@ public class ThreadAsc implements Runnable {
                 }
             }
         }, "T3");
-//        T3.start();
-//        T1.start();
-//        T2.start();
+        T3.start();
+        T1.start();
+        T2.start();
 
 
     }
