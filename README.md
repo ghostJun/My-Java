@@ -1,2 +1,2 @@
 # My-Java
-java practice
+Java面试用，基础相关测试

@@ -13,9 +13,11 @@ public class WaitAndNotify {
 
     public static void main(String[] args) {
         Thread producer = new Thread(new Producer());
-        Thread consumer = new Thread(new Consumer());
+        Thread consumer1 = new Thread(new Consumer());
+        Thread consumer2 = new Thread(new Consumer());
         producer.start();
-        consumer.start();
+        consumer1.start();
+        consumer2.start();
     }
 
     static class Producer implements Runnable {
@@ -50,7 +52,7 @@ public class WaitAndNotify {
         public void run() {
             while (true) {
                 try {
-                    Thread.sleep(1500);
+                    Thread.sleep(2500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
